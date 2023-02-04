@@ -6,6 +6,8 @@ services:
     container_name: yapi-web
     ports:
       - "40001:3000"
+    volumes:
+      - ./config.json:/yapi/config.json
     environment:
       - YAPI_ADMIN_ACCOUNT=852003793@qq.com
       - YAPI_ADMIN_PASSWORD=www1314

@@ -1,0 +1,24 @@
+{
+  "plugins": [
+    {
+      "name": "add-user",
+      "options": {}
+    }
+  ],
+  "adminAccount": "admin",
+  "adminPassword": "admin",
+  "closeRegister": true,
+  "db": {
+    "servername": "yapi-mongo",
+    "port": 27017,
+    "DATABASE": "yapi"
+  },
+  "mail": {
+    "enable": false,
+    "auth": {}
+  },
+  "ldapLogin": {
+    "enable": false
+  },
+  "port": 3000
+}
