@@ -31,15 +31,3 @@ services:
     expose:
       - 27017
     restart: unless-stopped
-  yapi-nginx:
-    image: nginx:latest
-    container_name: yapi-nginx
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
-    ports:
-      - "80:80"
-    links:
-      - yapi-web
-    depends_on:
-      - yapi-web
-
